@@ -32,23 +32,8 @@ const COMPANY_DATA = {
       ───────────────────────────────────────────────
       프로젝트 항목 작성 가이드
       ───────────────────────────────────────────────
-      각 프로젝트는 아래 필드를 가질 수 있어요. (intro/output/role은 비워둬도 됨)
-
-      {
-        name:     '프로젝트 이름',           // 필수
-        year:     '2023',                  // 필수 (혹은 '2021~2022')
-        category: 'Sound Library',         // 필수
-        intro:    '프로젝트 소개 글을 자유롭게 적으세요.\n줄바꿈도 가능합니다.',
-        output:   [
-          '결과물 1',
-          '결과물 2',
-          { text: '관련 링크 텍스트', url: 'https://example.com' }
-        ],
-        role:     '내가 맡은 역할을 자유롭게 적어요.'
-      }
-
-      - intro / role : 그냥 문자열로 적으면 돼요. \n 으로 줄바꿈.
-      - output       : 배열입니다. 일반 글은 그냥 문자열, 링크는 { text, url } 형태.
+      role 을 여러 줄로 쓰고 싶을 땐 \n 으로 줄바꿈하세요.
+      예: role: '첫째 줄\n둘째 줄\n셋째 줄'
       ───────────────────────────────────────────────
     */
     projects: [
@@ -61,10 +46,7 @@ const COMPANY_DATA = {
           '국가지정무형유산·전통 소리 관련 4000건 효과음원 제작',
           { text: 'K-SOUND LIBRARY', url: 'https://www.k-soundlibrary.kr/main.do' }
         ],
-        role: '사전 단계 장비 구성 및 음향 파트 기획',
-         '무형유산 조사·목록화·섭외',
-         '메타데이터 구성 참여',
-         '현장 녹음 및 소스 에디팅',
+        role: '사전 단계 장비 구성 및 음향 파트 기획\n무형유산 조사·목록화·섭외\n메타데이터 구성 참여\n현장 녹음 및 소스 에디팅'
       },
       {
         name: '회사 IP 라이브러리 제작',
@@ -73,12 +55,9 @@ const COMPANY_DATA = {
         intro: 'XR 콘텐츠에 활용 가능한 효과음원과 영상 콘텐츠를 개발하는 목표를 가지고 진행한 사업입니다.',
         output: [
           '자연, 공장 등의 환경, 폴리 사운드 카테고리 7종 제작',
-          '360 XR 영상 환경음 5.1ch 사운드 디자인 제작 '
+          '360 XR 영상 환경음 5.1ch 사운드 디자인 제작'
         ],
-        role: '사전 단계 장비 구성 및 음향 파트 기획',
-         '현장 조사 및 섭외 목록화',
-         '메타데이터 구성',
-         '현장 녹음 및 소스 에디팅',
+        role: '사전 단계 장비 구성 및 음향 파트 기획\n현장 조사 및 섭외 목록화\n메타데이터 구성\n현장 녹음 및 소스 에디팅'
       },
       {
         name: '오디오북 <점이지대>',
@@ -89,9 +68,7 @@ const COMPANY_DATA = {
           '바이노럴 포맷 오디오북 9편 (국내 E-Book 사이트 게시)',
           { text: '오디오북 듣기', url: 'https://www.welaaa.com/audio/detail/11690' }
         ],
-        role: '작곡가 선정 및 일정 조율',
-         '성우 녹음, 외부 녹음 화상 협업',
-         '대사 에디팅, 효과음 제작, 음악 편집',
+        role: '작곡가 선정 및 일정 조율\n성우 녹음, 외부 녹음 화상 협업\n대사 에디팅, 효과음 제작, 음악 편집'
       },
       {
         name: '오디오북 <구운몽>',
@@ -99,12 +76,10 @@ const COMPANY_DATA = {
         category: 'Audio Book',
         intro: '김만중 원작 <구운몽>을 각색한 오디오북 제작 사업입니다.',
         output: [
-          '바이노럴 포맷 오디오북 6챕터 제작(국내 E-Book 사이트 게시)',
-            { text: '오디오북 듣기', url: 'https://www.welaaa.com/audio/detail/11125' }
+          '바이노럴 포맷 오디오북 6챕터 제작 (국내 E-Book 사이트 게시)',
+          { text: '오디오북 듣기', url: 'https://www.welaaa.com/audio/detail/11125' }
         ],
-        role: '작곡가 선정 및 일정 조율',
-         '성우 녹음, 외부 녹음 화상 협업',
-         '대사 에디팅, 효과음 제작, 음악 편집',
+        role: '작곡가 선정 및 일정 조율\n성우 녹음, 외부 녹음 화상 협업\n대사 에디팅, 효과음 제작, 음악 편집'
       },
       {
         name: '오디오북 <반태산 귀신사냥꾼>',
@@ -113,11 +88,9 @@ const COMPANY_DATA = {
         intro: '한국형 효과음원 구축 사업의 일환으로 효과음원을 활용한 오디오북 제작한 사업입니다.',
         output: [
           '바이노럴 포맷 오디오북 2권 제작 (국내 E-Book 사이트 게시)',
-           { text: '오디오북 듣기', url: 'https://www.welaaa.com/audio/detail/7943' }
+          { text: '오디오북 듣기', url: 'https://www.welaaa.com/audio/detail/7943' }
         ],
-        role: '작곡가 선정 및 일정 조율',
-         '성우 녹음, 외부 녹음 화상 협업',
-         '대사 에디팅, 효과음 제작, 음악 편집',
+        role: '작곡가 선정 및 일정 조율\n성우 녹음, 외부 녹음 화상 협업\n대사 에디팅, 효과음 제작, 음악 편집'
       },
       {
         name: '공기관 미디어아트 전시',
@@ -276,37 +249,7 @@ const COMPANY_DATA = {
 
 /*
   ───────────────────────────────────────────────
-  포트폴리오 항목 작성 가이드
-  ───────────────────────────────────────────────
-  각 포트폴리오는 아래 필드를 가질 수 있어요.
-
-  {
-    id:       1,                                 // 필수, 고유한 숫자
-    title:    'Lies of P',                       // 필수
-    cat:      'RPG / Ingame',                    // 필수 (디테일 화면 카테고리 표시)
-    tags:     ['rpg','ingame','unreal'],         // 필터에 사용. 카테고리 필터 버튼과 매칭.
-    video:    'https://www.youtube.com/embed/영상ID',  // 비우면 placeholder가 보임
-    meta: {
-      period: '2023.01 ~ 2024.03',
-      engine: 'Unreal Engine 5',
-      tools:  'Pro Tools, Wwise, Dolby Atmos'
-    },
-    sections: {
-      introduction: [
-        { type: 'text', value: '소개 글입니다.' },
-        { type: 'image', src: 'assets/images/lies-of-p-intro.jpg', alt: '인트로 이미지' }
-      ],
-      ambience:  [ { type: 'text', value: '...' } ],
-      voice:     [ { type: 'text', value: '...' } ],
-      sfx:       [ { type: 'text', value: '...' } ],
-      ui:        [ { type: 'text', value: '...' } ]
-    }
-  }
-
-  - sections 안의 각 섹션은 배열입니다. 글과 이미지를 자유롭게 섞을 수 있어요.
-  - { type: 'text',  value: '글 내용' }   ← 줄바꿈은 \n 으로
-  - { type: 'image', src: '이미지 경로', alt: '설명' }
-  - 비어있는 섹션은 자동으로 "세부 내용은 추후 추가됩니다." 로 표시됩니다.
+  포트폴리오 항목 작성 가이드 — js/main.js README 참고
   ───────────────────────────────────────────────
 */
 const PORTFOLIO_DATA = [
@@ -362,7 +305,6 @@ navToggle.addEventListener('click', () => {
   navToggle.classList.toggle('is-open');
   navMenu.classList.toggle('is-open');
 });
-// 메뉴 클릭 시 모바일에서는 닫기
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     navToggle.classList.remove('is-open');
@@ -370,7 +312,6 @@ navLinks.forEach(link => {
   });
 });
 
-// Active section by IntersectionObserver
 const sections = ['profile','experience','portfolio','contact'].map(id => $('#' + id));
 const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -395,7 +336,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 $$('.reveal').forEach(el => revealObserver.observe(el));
 
-// Intro 섹션 - 시야에서 벗어나면 다시 사라지도록 (재진입 시 다시 나타남)
 const introSection = $('#intro');
 if (introSection) {
   const introObserver = new IntersectionObserver((entries) => {
@@ -425,7 +365,6 @@ let currentCompany = null;
 function showPanel(which) {
   [expEmpty, expSummary, expDetail].forEach(p => p.hidden = true);
   which.hidden = false;
-  // 디테일 모드일 때만 좌측 축소
   expLayout.classList.toggle('is-detail', which === expDetail);
 }
 
@@ -434,7 +373,6 @@ function renderCompanySummary(companyKey) {
   currentCompany = companyKey;
 
   expSummaryTitle.textContent = data.name;
-  // 본문 (주요 경험 / 주요 성과)
   expSummaryBody.innerHTML = data.summary.map(sec => `
     <div class="exp-section">
       <h4>${sec.title}</h4>
@@ -442,7 +380,6 @@ function renderCompanySummary(companyKey) {
     </div>
   `).join('');
 
-  // 프로젝트 카드 그리드
   expProjectsCount.textContent = data.projects.length;
   expProjectsList.innerHTML = data.projects.map((p, idx) => `
     <button class="exp-project" data-project-idx="${idx}">
@@ -451,14 +388,12 @@ function renderCompanySummary(companyKey) {
     </button>
   `).join('');
 
-  // 회사 카드 active 상태 토글
   $$('.company-card').forEach(c => {
     c.classList.toggle('is-active', c.dataset.company === companyKey);
   });
 
   showPanel(expSummary);
 
-  // 프로젝트 카드 클릭 바인딩
   $$('#expProjectsList .exp-project').forEach(btn => {
     btn.addEventListener('click', () => {
       const idx = parseInt(btn.dataset.projectIdx, 10);
@@ -469,17 +404,14 @@ function renderCompanySummary(companyKey) {
 
 const expDetailSections = $('#expDetailSections');
 
-// 글의 줄바꿈(\n)을 <br>로
 function nl2br(s) {
   return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br/>');
 }
-// 외부 링크 안전 처리
 function safeUrl(u) {
   if (!u) return '#';
   if (/^https?:\/\//i.test(u) || u.startsWith('/') || u.startsWith('mailto:')) return u;
   return '#';
 }
-// output 배열을 HTML로 (문자열 또는 {text, url})
 function renderOutput(arr) {
   if (!Array.isArray(arr) || arr.length === 0) {
     return '<p class="exp-detail__placeholder">세부 내용은 추후 추가됩니다.</p>';
@@ -515,7 +447,6 @@ function renderProjectDetail(companyKey, projectIdx) {
   expDetailTitle.textContent = project.name;
   expDetailMeta.textContent  = `${project.category} · ${project.year}`;
 
-  // 본문: 프로젝트 소개 / 산출물 결과 / 주요 역할
   const introHtml  = project.intro ? `<p>${nl2br(project.intro)}</p>` : '<p class="exp-detail__placeholder">세부 내용은 추후 추가됩니다.</p>';
   const outputHtml = renderOutput(project.output);
   const roleHtml   = project.role  ? `<p>${nl2br(project.role)}</p>`  : '<p class="exp-detail__placeholder">세부 내용은 추후 추가됩니다.</p>';
@@ -537,7 +468,6 @@ function renderProjectDetail(companyKey, projectIdx) {
 
   showPanel(expDetail);
 
-  // 사이드 리스트 재바인딩
   $$('#expDetailList .exp-detail__list-item').forEach(item => {
     item.addEventListener('click', () => {
       renderProjectDetail(companyKey, parseInt(item.dataset.idx, 10));
@@ -545,21 +475,18 @@ function renderProjectDetail(companyKey, projectIdx) {
   });
 }
 
-// 회사 "자세히 보기" 버튼
 $$('.company-card__btn').forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
     renderCompanySummary(btn.dataset.companyBtn);
   });
 });
-// 회사 카드 자체 클릭으로도 진입 가능
 $$('.company-card').forEach(card => {
   card.addEventListener('click', () => {
     renderCompanySummary(card.dataset.company);
   });
 });
 
-// 디테일 → 요약으로 돌아가기
 expBack.addEventListener('click', () => {
   if (currentCompany) showPanel(expSummary);
 });
@@ -605,25 +532,19 @@ function renderPortfolio(filter = 'all') {
   });
 }
 
-// YouTube/Vimeo URL → embed URL 변환
 function toEmbedUrl(url) {
   if (!url) return '';
-  // 이미 embed면 그대로
   if (/youtube\.com\/embed\//.test(url)) return url;
   if (/player\.vimeo\.com\/video\//.test(url)) return url;
-  // youtu.be 단축형
   const yt1 = url.match(/youtu\.be\/([a-zA-Z0-9_-]+)/);
   if (yt1) return `https://www.youtube.com/embed/${yt1[1]}`;
-  // youtube watch?v=
   const yt2 = url.match(/youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)/);
   if (yt2) return `https://www.youtube.com/embed/${yt2[1]}`;
-  // vimeo.com/123
   const vm = url.match(/vimeo\.com\/(\d+)/);
   if (vm) return `https://player.vimeo.com/video/${vm[1]}`;
   return url;
 }
 
-// 섹션 블록 배열을 HTML로 (글 + 이미지)
 function renderSectionBody(blocks) {
   if (!Array.isArray(blocks) || blocks.length === 0) {
     return '<p class="pf-section__placeholder">세부 내용은 추후 추가됩니다.</p>';
@@ -656,7 +577,6 @@ function openPortfolioDetail(id) {
   pfTitle.textContent = data.title;
   pfCategory.textContent = data.cat;
 
-  // 메타
   const meta = data.meta || {};
   const periodEl = document.getElementById('pfPeriod');
   const engineEl = document.getElementById('pfEngine');
@@ -665,7 +585,6 @@ function openPortfolioDetail(id) {
   if (engineEl) engineEl.textContent = meta.engine || '–';
   if (toolsEl)  toolsEl.textContent  = meta.tools  || '–';
 
-  // 영상: URL 있으면 embed iframe, 없으면 placeholder
   const embed = toEmbedUrl(data.video);
   if (embed) {
     pfVideo.innerHTML = `<iframe src="${embed}" title="${data.title}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
@@ -681,7 +600,6 @@ function openPortfolioDetail(id) {
     `;
   }
 
-  // 섹션 5개 렌더링
   const sections = data.sections || {};
   const pfSections = document.getElementById('pfSections');
   pfSections.innerHTML = Object.keys(PF_SECTION_LABELS).map(key => `
@@ -695,7 +613,6 @@ function openPortfolioDetail(id) {
 
   pfGrid.hidden = true;
   pfDetail.hidden = false;
-  // 디테일 진입 시 섹션 최상단으로 스크롤
   document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -705,7 +622,6 @@ function closePortfolioDetail() {
   document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// 필터
 pfFilter.addEventListener('click', (e) => {
   const btn = e.target.closest('.pill');
   if (!btn) return;
@@ -716,5 +632,4 @@ pfFilter.addEventListener('click', (e) => {
 
 pfBack.addEventListener('click', closePortfolioDetail);
 
-// 초기 렌더링
 renderPortfolio('all');
