@@ -41,7 +41,7 @@ const COMPANY_DATA = {
         name: '한국형 효과음원 구축 사업',
         year: '2021~2022',
         category: 'Sound Library',
-        intro: '미디어 콘텐츠 후반제작에 즉시 활용 가능한 한국형 효과음원을 개발하는 목표를 가지고 진행한 사업입니다.',
+        intro: '미디어 콘텐츠 후반제작에 즉시 활용 가능한 한국형 효과음원을 개발하는 목표를 가지고 진행한 사업',
         output: [
           '국가지정무형유산·전통 소리 관련 4000건 효과음원 제작',
           { text: 'K-SOUND LIBRARY', url: 'https://www.k-soundlibrary.kr/main.do' }
@@ -52,7 +52,7 @@ const COMPANY_DATA = {
         name: '회사 IP 라이브러리 제작',
         year: '2023',
         category: 'Sound Library',
-        intro: 'XR 콘텐츠에 활용 가능한 효과음원과 영상 콘텐츠를 개발하는 목표를 가지고 진행한 사업입니다.',
+        intro: 'XR 콘텐츠에 활용 가능한 효과음원과 영상 콘텐츠를 개발하는 목표를 가지고 진행한 사업',
         output: [
           '자연, 공장 등의 환경, 폴리 사운드 카테고리 7종 제작',
           '360 XR 영상 환경음 5.1ch 사운드 디자인 제작'
@@ -63,7 +63,7 @@ const COMPANY_DATA = {
         name: '오디오북 <점이지대>',
         year: '2023',
         category: 'Audio Book',
-        intro: '전북의 각 지역을 현대 문학으로 엮어 제작한 오디오북 제작 사업입니다.',
+        intro: '전북의 각 지역을 현대 문학으로 엮어 제작한 오디오북 제작 사업',
         output: [
           '바이노럴 포맷 오디오북 9편 (국내 E-Book 사이트 게시)',
           { text: '오디오북 듣기', url: 'https://www.welaaa.com/audio/detail/11690' }
@@ -74,7 +74,7 @@ const COMPANY_DATA = {
         name: '오디오북 <구운몽>',
         year: '2022',
         category: 'Audio Book',
-        intro: '김만중 원작 <구운몽>을 각색한 오디오북 제작 사업입니다.',
+        intro: '김만중 원작 <구운몽>을 각색한 오디오북 제작 사업',
         output: [
           '바이노럴 포맷 오디오북 6챕터 제작 (국내 E-Book 사이트 게시)',
           { text: '오디오북 듣기', url: 'https://www.welaaa.com/audio/detail/11125' }
@@ -85,7 +85,7 @@ const COMPANY_DATA = {
         name: '오디오북 <반태산 귀신사냥꾼>',
         year: '2021',
         category: 'Audio Book',
-        intro: '한국형 효과음원 구축 사업의 일환으로 효과음원을 활용한 오디오북 제작한 사업입니다.',
+        intro: '한국형 효과음원 구축 사업의 일환으로 효과음원을 활용한 오디오북 제작한 사업',
         output: [
           '바이노럴 포맷 오디오북 2권 제작 (국내 E-Book 사이트 게시)',
           { text: '오디오북 듣기', url: 'https://www.welaaa.com/audio/detail/7943' }
@@ -96,7 +96,7 @@ const COMPANY_DATA = {
         name: '공기관 미디어아트 전시',
         year: '2021',
         category: 'Media Art',
-        intro: '한국국토정보공사의 비전을 담은 전시관을 구축한 사업입니다.',
+        intro: '한국국토정보공사의 비전을 담은 전시관을 구축한 사업',
         output: [
           'VR콘텐츠 2편',
           'AR 콘텐츠 1편'
@@ -107,12 +107,34 @@ const COMPANY_DATA = {
         name: '지역 문화 콘텐츠 재생 전시',
         year: '2021',
         category: 'Exhibition',
-        intro: '지역의 문화 자산을 사운드로 재해석한 전시예요.',
+        intro: '노후된 지역 산업 단지에 문화 콘텐츠를 제작을 목표로 전시관 구축',
         output: [
-          '전시 기간 30일 운영',
-          '지역 매체 보도 5건'
+          '40분 실감전시영상 사운드 디자인 (9.1.6ch)',
+          '인터랙티브 체험 콘텐츠 2종 개발'
         ],
-        role: '사운드 기획 및 디자인'
+        role: '현장 장비 구성 및 전시 장비 구축\n동시녹음\n효과음 제작 및 사운드 디자인\n소리와 연관된 인터랙티브 체험 콘텐츠 2종 개발 및 구현 '
+      },
+       {
+        name: '인공지능 콘텐츠 미디어아트 전시',
+        year: '2021',
+        category: 'Exhibition',
+        intro: '광주의  100년 역사를 학습한 AI의 데이터와 제너러티브 아트를 결합한 결과물을 전시 콘텐츠로 제작 ',
+        output: [
+          '전시 영상 2편 사운드 디자인',
+          '광주실감콘텐츠큐브GCC에서 상영'
+        ],
+        role: '버츄얼 휴먼 캐릭터 보이스 에디팅 및 디자인\n음악 선곡 및 편집\n효과음 제작 및 사운드디자인 '
+      },
+       {
+        name: '지역 특성 미디어아트 콘텐츠 전시',
+        year: '2021',
+        category: 'Exhibition',
+        intro: '목포의 문화, 맛, 근대건축공간에 대한 영상 콘텐츠를 제작 ',
+        output: [
+          '영상 콘텐츠 3종',
+          '목포미식문화갤러리에서 상영'
+        ],
+        role: '현장 녹음\n폴리 사운드 후시 녹음\n음원 선곡 및 편집\n성우 녹음 화상 진행 및 대사 에디팅\n효과음 제작 및 사운드 디자인 '
       },
       {
         name: '기업 B2B 실감콘텐츠 제작',
