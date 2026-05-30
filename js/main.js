@@ -3,7 +3,6 @@
    ============================================================ */
 
 /* ============== DATA ============== */
-// 회사별 요약 정보
 const COMPANY_DATA = {
   baka: {
     name: 'Studio BAKA',
@@ -32,8 +31,15 @@ const COMPANY_DATA = {
       ───────────────────────────────────────────────
       프로젝트 항목 작성 가이드
       ───────────────────────────────────────────────
-      role 을 여러 줄로 쓰고 싶을 땐 \n 으로 줄바꿈하세요.
-      예: role: '첫째 줄\n둘째 줄\n셋째 줄'
+      ⚠️ 작성 시 주의사항
+      
+      1. 배열([]) 안의 항목 사이에는 반드시 쉼표(,)
+         예: ['항목1', '항목2', '항목3']  ← 끝에는 쉼표 X
+      
+      2. role 여러 줄로 쓰고 싶을 땐 한 줄 안에서 \n 으로 줄바꿈
+         예: role: '첫째 줄\n둘째 줄\n셋째 줄'
+      
+      3. 따옴표는 짝을 맞춰야 함 ('...' 또는 "...")
       ───────────────────────────────────────────────
     */
     projects: [
@@ -112,31 +118,31 @@ const COMPANY_DATA = {
           '40분 실감전시영상 사운드 디자인 (9.1.6ch)',
           '인터랙티브 체험 콘텐츠 2종 개발'
         ],
-        role: '현장 장비 구성 및 전시 장비 구축\n동시녹음\n효과음 제작 및 사운드 디자인\n소리와 연관된 인터랙티브 체험 콘텐츠 2종 개발 및 구현 '
+        role: '현장 장비 구성 및 전시 장비 구축\n동시녹음\n효과음 제작 및 사운드 디자인\n소리와 연관된 인터랙티브 체험 콘텐츠 2종 개발 및 구현'
       },
-       {
+      {
         name: '인공지능 콘텐츠 미디어아트 전시',
         year: '2021',
         category: 'Exhibition',
-        intro: '광주의  100년 역사를 학습한 AI의 데이터와 제너러티브 아트를 결합한 결과물을 전시 콘텐츠로 제작 ',
+        intro: '광주의 100년 역사를 학습한 AI의 데이터와 제너러티브 아트를 결합한 결과물을 전시 콘텐츠로 제작',
         output: [
           '전시 영상 2편 사운드 디자인',
           '광주실감콘텐츠큐브GCC에서 상영'
         ],
-        role: '버츄얼 휴먼 캐릭터 보이스 에디팅 및 디자인\n음악 선곡 및 편집\n효과음 제작 및 사운드디자인 '
+        role: '버츄얼 휴먼 캐릭터 보이스 에디팅 및 디자인\n음악 선곡 및 편집\n효과음 제작 및 사운드디자인'
       },
-       {
+      {
         name: '지역 특성 미디어아트 콘텐츠 전시',
         year: '2021',
         category: 'Exhibition',
-        intro: '목포의 문화, 맛, 근대건축공간에 대한 영상 콘텐츠를 제작 ',
+        intro: '목포의 문화, 맛, 근대건축공간에 대한 영상 콘텐츠를 제작',
         output: [
           '영상 콘텐츠 3종',
           '목포미식문화갤러리에서 상영'
         ],
-        role: '현장 녹음\n폴리 사운드 후시 녹음\n음원 선곡 및 편집\n성우 녹음 화상 진행 및 대사 에디팅\n효과음 제작 및 사운드 디자인 '
+        role: '현장 녹음\n폴리 사운드 후시 녹음\n음원 선곡 및 편집\n성우 녹음 화상 진행 및 대사 에디팅\n효과음 제작 및 사운드 디자인'
       },
-       {
+      {
         name: '지역 IP 미디어아트 전시',
         year: '2021',
         category: 'Exhibition',
@@ -151,12 +157,12 @@ const COMPANY_DATA = {
         name: '기업 B2B 실감콘텐츠 제작',
         year: '2023',
         category: 'Interactive',
-        intro: '대 글로비스의 실감형 브랜드 필름의 사운드 디자인을 진행',
+        intro: '현대 글로비스의 실감형 브랜드 필름의 사운드 디자인을 진행',
         output: [
           '실감형 미디어 영상 2편',
           '성수동 현대글로비스 사옥에서 상영'
         ],
-        role: '현장 믹싱\n성우 녹음 및 대사 에디팅\n음원 선곡 및 편집 \n효과음 제작 및 사운드 디자인'
+        role: '현장 믹싱\n성우 녹음 및 대사 에디팅\n음원 선곡 및 편집\n효과음 제작 및 사운드 디자인'
       },
       {
         name: '아시아 문화 다큐멘터리',
@@ -165,8 +171,8 @@ const COMPANY_DATA = {
         intro: '국립 아시아문화전당에서 주관하는 아시아문화 아카이브 구축 사업',
         output: [
           '2021년 총 13편',
-          '2022년 총 11편'
-           { text: 'ACC 아카이브 이야기', url: 'http://archive.acc.go.kr/chnnelAcc/chnnelAccDetailView.do' }
+          '2022년 총 11편',
+          { text: 'ACC 아카이브 이야기', url: 'http://archive.acc.go.kr/chnnelAcc/chnnelAccDetailView.do' }
         ],
         role: '현장 인터뷰 녹음\n음악 선곡 및 편집\n대사 에디팅\n기관 로고 사운드 제작'
       },
@@ -176,8 +182,8 @@ const COMPANY_DATA = {
         category: 'Education',
         intro: '우리 역사넷 교육영상 제작',
         output: [
-          '다큐멘터리 6편 제작 (농악, 읍성, 질그릇, 탱화, 해녀, 혼례)'
-           { text: '우리역사', url: 'https://contents.history.go.kr/play/main.do?itemId=tt' }
+          '다큐멘터리 6편 제작 (농악, 읍성, 질그릇, 탱화, 해녀, 혼례)',
+          { text: '우리역사', url: 'https://contents.history.go.kr/play/main.do?itemId=tt' }
         ],
         role: '현장 인터뷰 녹음\n음악 선곡 및 편집\n대사 에디팅\n효과음 제작'
       }
@@ -259,14 +265,14 @@ const COMPANY_DATA = {
         year: '2020',
         category: '예능',
         intro: 'Seezn 자체컨텐츠 웹예능 동시녹음 작업',
-        output: ['예병대캠프 4기 라비,태민 편 촬영'],
+        output: ['예병대캠프 4기 라비, 태민 편 촬영'],
         role: '출연진 마이크 관리 및 레코더 오퍼레이팅'
       },
       {
         name: '왓더펀',
         year: '2020',
         category: 'Content',
-        intro: '웹예능 동시녹음 참여 .',
+        intro: '웹예능 동시녹음 참여',
         output: ['왓더펀 공포특집 납치된 신동훈을 구해라 편 촬영'],
         role: '출연진 마이크 관리 및 레코더 오퍼레이팅'
       },
@@ -274,7 +280,7 @@ const COMPANY_DATA = {
         name: '사장님 귀는 당나귀 귀',
         year: '2020',
         category: '예능',
-        intro: 'KBS 예능 동시녹음 참',
+        intro: 'KBS 예능 동시녹음 참여',
         output: ['김기태 감독편 촬영'],
         role: '출연진 마이크 관리 및 레코더 오퍼레이팅'
       }
@@ -282,11 +288,6 @@ const COMPANY_DATA = {
   }
 };
 
-/*
-  ───────────────────────────────────────────────
-  포트폴리오 항목 작성 가이드 — js/main.js README 참고
-  ───────────────────────────────────────────────
-*/
 const PORTFOLIO_DATA = [
   {
     id: 1,
@@ -325,7 +326,7 @@ const PORTFOLIO_DATA = [
 const $  = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
-/* ============== NAV: scroll state + mobile toggle + active section ============== */
+/* ============== NAV ============== */
 const nav = $('#nav');
 const navToggle = $('#navToggle');
 const navMenu = $('.nav__menu');
@@ -360,7 +361,7 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
 sections.forEach(s => s && sectionObserver.observe(s));
 
-/* ============== REVEAL on scroll ============== */
+/* ============== REVEAL ============== */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
